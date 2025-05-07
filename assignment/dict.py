@@ -6,3 +6,12 @@ def showBill():
     for number in range(len(menuList)):
         print(menuList[number][0], menuList[number][1])
     print("Total :", price,"Baht")
+
+while True:
+    menuName = input("Plese Enter Menu :")
+    if(menuName.lower() == "exit"):
+        break
+    else:
+        menuList.append([menuName, systemMenu[menuName]])
+        price += int(systemMenu[menuName])
+showBill()
