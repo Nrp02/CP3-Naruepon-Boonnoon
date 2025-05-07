@@ -4,7 +4,7 @@ totalprice = 0
 def showBill():
     print("---- My Food----")
     for number in range(len(menuList)):
-        print(menuList[number],"Baht")
+        print(menuList[0][0],menuList[1][1],"Baht")
     print("Total :", totalprice,"Baht")
 
 while True:
